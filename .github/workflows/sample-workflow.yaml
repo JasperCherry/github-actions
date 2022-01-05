@@ -22,7 +22,8 @@ jobs:
       - name: print outer files # this steps won't be showing any files as we didn't checkout our codes
         run: |
           pwd
-          cd ../
+          ls -a
+          cd .
           pwd
           ls -a
 
