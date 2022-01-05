@@ -14,23 +14,10 @@ jobs:
       - name: print current files
         run: | # this | enables us to multiple commands, good for formatting
           pwd
-          ls -aR
-
+          ls -a
 
   job2:
     runs-on: ubuntu-latest
-    needs: [job1]
-    steps:
-      - name: print outer files # this steps won't be showing any files as we didn't checkout our codes
-        run: |
-          pwd
-          ls -a
-
-
-
-  job3:
-    runs-on: ubuntu-latest
-    needs: [job2]
     steps:
       - name: print env variables
         run: echo $VAR1 $VAR2 $VAR3
