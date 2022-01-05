@@ -9,6 +9,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout out current code using public action
+        uses: actions/checkout@v2
       - name: print current files
         run: | # this | enables us to multiple commands, good for formatting
           pwd
@@ -23,19 +25,6 @@ jobs:
         run: |
           pwd
           ls -a
-          cd ..
-          pwd
-          ls -a
-          cd ..
-          pwd
-          ls -a
-          cd ..
-          pwd
-          ls -a
-          cd ..
-          pwd
-          ls -a
-          cd ..
 
 
 
