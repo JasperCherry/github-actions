@@ -9,7 +9,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: print current files 1
+      - name: print current files
         run: | # this | enables us to multiple commands, good for formatting
           pwd
           ls -a
@@ -19,8 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [job1]
     steps:
-      - name: print current files 2 # this steps won't be showing any files as we didn't checkout our codes
+      - name: print outer files # this steps won't be showing any files as we didn't checkout our codes
         run: |
+          pwd
+          cd ../
           pwd
           ls -a
 
