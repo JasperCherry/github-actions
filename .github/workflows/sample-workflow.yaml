@@ -12,7 +12,7 @@ jobs:
       - name: print current files
         run: | # this | enables us to multiple commands, good for formatting
           pwd
-          ls -a
+          ls -al
 
 
   job2:
@@ -22,19 +22,19 @@ jobs:
       - name: print outer files # this steps won't be showing any files as we didn't checkout our codes
         run: |
           pwd
-          ls -a
+          ls -al
           cd ..
           pwd
-          ls -a
+          ls -al
           cd ..
           pwd
-          ls -a
+          ls -al
           cd ..
           pwd
-          ls -a
+          ls -al
           cd ..
           pwd
-          ls -a
+          ls -al
           cd ..
 
 
