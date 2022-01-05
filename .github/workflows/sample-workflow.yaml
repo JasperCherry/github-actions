@@ -23,9 +23,17 @@ jobs:
         run: |
           pwd
           ls -a
-          cd .git
+          cd ..
           pwd
           ls -a
+          cd ..
+          pwd
+          ls -a
+          cd ..
+          pwd
+          ls -a
+          cd ..
+
 
 
   job3:
