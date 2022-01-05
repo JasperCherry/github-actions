@@ -23,7 +23,7 @@ jobs:
         run: |
           pwd
           ls -a
-          cd .
+          cd .git
           pwd
           ls -a
 
