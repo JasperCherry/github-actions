@@ -1,4 +1,4 @@
-name: Scheduled 10min
+name: Scheduled
 on:
   schedule:
     - cron: "*/10 * * * *"
