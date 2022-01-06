@@ -11,14 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: ./bubby.yml # Uses an action in the root directory
+        uses: ./action-main/ # Uses an action in the root directory
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
-
 
       # steps:
       #   - name: Hello world action step

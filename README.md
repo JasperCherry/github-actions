@@ -19,3 +19,10 @@ The time we greeted you.
 uses: actions/hello-world-javascript-action@v1.1
 with:
   who-to-greet: 'Mona the Octocat'
+
+
+useful urls:
+
+https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8
+
+https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action
