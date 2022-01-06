@@ -1,4 +1,4 @@
-name: Sample Workflow
+name: Sample
 on:
   push: # enabling push event on main branch to fire the workflow
     branches:
